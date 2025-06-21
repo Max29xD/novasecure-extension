@@ -1,0 +1,102 @@
+{
+  "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
+  "vcs": { "enabled": false, "clientKind": "git", "useIgnoreFile": false },
+  "files": { "ignoreUnknown": false, "ignore": [] },
+  "formatter": {
+    "enabled": true,
+    "useEditorconfig": true,
+    "formatWithErrors": false,
+    "indentStyle": "space",
+    "indentWidth": 2,
+    "lineEnding": "lf",
+    "lineWidth": 80,
+    "attributePosition": "auto",
+    "bracketSpacing": true,
+    "ignore": [
+      "**/*.log",
+      "**/.DS_Store",
+      "**/*.",
+      ".vscode/settings.json",
+      "**/.history",
+      "**/.yarn",
+      "**/bazel-*",
+      "**/bazel-bin",
+      "**/bazel-out",
+      "**/bazel-qwik",
+      "**/bazel-testlogs",
+      "**/dist",
+      "**/dist-dev",
+      "**/etc",
+      "**/external",
+      "**/node_modules",
+      "**/temp",
+      "**/tsc-out",
+      "**/tsdoc-metadata.json",
+      "**/target",
+      "**/output",
+      "**/rollup.config.js",
+      "**/build",
+      "**/.cache",
+      "**/.vscode",
+      "**/.rollup.cache",
+      "**/tsconfig.tsbuildinfo",
+      "**/vite.config.ts",
+      "**/*.spec.tsx",
+      "**/*.spec.ts",
+      "**/.netlify",
+      "**/pnpm-lock.yaml",
+      "**/package-lock.json",
+      "**/yarn.lock",
+      "**/server"
+    ]
+  },
+  "organizeImports": {
+    "enabled": true
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "recommended": true,
+      "suspicious": {
+        "noArrayIndexKey": "off",
+        "noExplicitAny": "off"
+      },
+      "correctness": {
+        "useExhaustiveDependencies": "error",
+        "noUnusedVariables": "error",
+        "noUndeclaredVariables": "error",
+        "noUnusedImports": "error"
+      },
+      "style": {
+        "useImportType": "error",
+        "useShorthandArrayType": "error",
+        "noNonNullAssertion": "error"
+      },
+      "security": {
+        "all": true
+      },
+      "performance": {
+        "noAccumulatingSpread": "error",
+        "noBarrelFile": "error",
+        "noDelete": "error",
+        "recommended": true
+      }
+    }
+  },
+  "javascript": {
+    "linter": {
+      "enabled": true
+    },
+    "formatter": {
+      "jsxQuoteStyle": "double",
+      "quoteProperties": "asNeeded",
+      "trailingCommas": "none",
+      "semicolons": "asNeeded",
+      "arrowParentheses": "asNeeded",
+      "bracketSameLine": false,
+      "quoteStyle": "single",
+      "attributePosition": "auto",
+      "bracketSpacing": true
+    }
+  }
+}

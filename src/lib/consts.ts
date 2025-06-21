@@ -1,0 +1,2 @@
+export const API_URL = "https://novasecure.vercel.app/api";
+export const EXTENSION_SECRET = "716a4d5d779ae1dca85f092cf2a0397b92b7a6ec6b73a1b073c571f09ecacdcc3031b234bceb70bdf47cd63f2c4e9d56a1def0e9eb28654f24b624421f9a4991c59456f54b0dba7c27243243ab4992d0beabea2e24eccff3767be54ca3477a6695a2a48e600d9d1b6f5422fed78fdf2cfbe35d9eff7f9cfa8a2f517bcf738ab1";
