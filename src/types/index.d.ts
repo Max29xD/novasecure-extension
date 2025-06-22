@@ -4,12 +4,19 @@ export interface KeyTypeProps {
 }
 
 export interface SessionProps {
-  planType: string;
+  planName: string | undefined;
   id: string;
   name: string;
+  emailVerified: boolean;
   email: string;
-  image?: string | null;
-  role: string;
+  createdAt: Date;
+  updatedAt: Date;
+  image?: string | null | undefined;
+  planId: string;
+  banned: boolean | null | undefined;
+  role?: string | null | undefined;
+  banReason?: string | null | undefined;
+  banExpires?: Date | null | undefined;
 }
 
 export type Endpoints =

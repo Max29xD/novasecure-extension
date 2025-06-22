@@ -346,7 +346,7 @@ export default function App() {
 													Plan
 												</span>
 												<span className="text-sm font-medium">
-													{planTranslate(session?.planType)}
+													{planTranslate(session?.planName)}
 												</span>
 											</div>
 											<div className="h-auto w-px bg-border mx-0" />
